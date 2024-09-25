@@ -12,7 +12,7 @@ mkdir -p $exp_path $data_path $res_path
 
 datasets="xsum squad writing"
 source_models="gpt2-xl gpt-j-6B gpt-neo-2.7B opt-2.7b gpt-neox-20b"
-base_models='Fast likelihood lrr logrank standalone'
+base_models='likelihood lrr logrank Fast standalone'
 
 #evaluate TOCSIN in the white-box setting
 echo Evaluate models in the white-box setting:

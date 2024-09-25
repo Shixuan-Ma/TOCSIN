@@ -149,9 +149,10 @@ def get_score(logits_ref, logits_score, labels,source_texts, perturbed_texts, ba
         output_score = log_rank_x * math.pow(math.e, mean_values)
     elif basemodel == 'standalone':
         output_score = -mean_values
-    #默认basemodel为Fast-DetectGPT
+
+    #默认basemodel为likelihood
     else:
-        output_score = ((log_likelihood_x.squeeze(-1).item() - miu_tilde.item()) / (sigma_tilde.item())) * math.pow(math.e, -mean_values)
+        output_score =  log_likelihood_x.squeeze(-1).item() * math.pow(math.e, mean_values)
 
     return output_score
 

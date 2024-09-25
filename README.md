@@ -4,7 +4,7 @@
 ## Data
 Following folders are created for experiments:
 * ./exp_Open_source_model -> experiments for open-source models generations (Five_models.sh).
-* ./exp_API-based_model -> experiments for ChatGPT, and GPT-4 generations (ChatGPT_GPT-4.sh).
+* ./exp_API-based_model -> experiments for ChatGPT, GPT-4, and Gemini generations (API-based.sh).
 
 ## Models loading
 If you want to load models locally, place the files for the bart-base model in the 'facebook' directory. 
@@ -33,18 +33,19 @@ gpt-neox-20b: 'EleutherAI/gpt-neox-20b'
 GPU: NVIDIA A40 GPU with 48GB memory
 
 ## Demo
-Please run following commands for an demo:
+Please run following commands for a demo:
 ```
 sh Five_models.sh
 ```
 for experiments with Open-Source LLMs
 or
 ```
-sh ChatGPT_GPT-4.sh
+sh API-based.sh
 ```
 for experiments with API-based LLMs
 
-
+### Citation
+If you find this work useful, you can cite it with the following BibTex entry:
 
 
 
