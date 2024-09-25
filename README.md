@@ -47,5 +47,12 @@ for experiments with API-based LLMs
 ### Citation
 If you find this work useful, you can cite it with the following BibTex entry:
 
-
+@inproceedings{
+anonymous2024zeroshot,
+title={Zero-Shot Detection of {LLM}-Generated Text using Token Cohesiveness},
+author={Anonymous},
+booktitle={The 2024 Conference on Empirical Methods in Natural Language Processing},
+year={2024},
+url={https://openreview.net/forum?id=sbBAqZnszt}
+}
 
